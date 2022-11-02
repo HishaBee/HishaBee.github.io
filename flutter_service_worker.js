@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "6922d47dfca2b496d54b14424ef58ad7",
+  "assets/AssetManifest.json": "6ede6a9fbef79aad39791025c2af43bf",
 "assets/assets/icons/blank_person.png": "77f5794e2eb49f7989b8f85e92cfa4e0",
 "assets/assets/icons/email.png": "2a23a5cb1d2b3b3b930b8c90ab6f99c7",
 "assets/assets/icons/facebook.png": "f907784683c9efb4fbccf5665463d87b",
@@ -23,6 +23,7 @@ const RESOURCES = {
 "assets/assets/placeholders/business-manager-log-banner.png": "16a90dca2dd09b84e41acd32e46e930c",
 "assets/assets/placeholders/emptyImage.png": "159a3639b2c4323cc59eeae9f6755c04",
 "assets/assets/placeholders/otp_image.png": "af558689fdcffd35185981e4838029a0",
+"assets/assets/placeholders/playstore.jpeg": "f2e031e22716ae6964339acdf7649322",
 "assets/assets/placeholders/theme_selected.png": "4ed75f0c5d8bde5b94603814b1b1680f",
 "assets/assets/splash_screen/beauty_fun.png": "d41d8cd98f00b204e9800998ecf8427e",
 "assets/assets/splash_screen/launcher_icon.png": "d41d8cd98f00b204e9800998ecf8427e",
@@ -40,7 +41,7 @@ const RESOURCES = {
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/fluttertoast/assets/toastify.css": "a85675050054f179444bc5ad70ffc635",
 "assets/packages/fluttertoast/assets/toastify.js": "e7006a0a033d834ef9414d48db3be6fc",
-"assets/shaders/ink_sparkle.frag": "ae6c1fd6f6ee6ee952cde379095a8f3f",
+"assets/shaders/ink_sparkle.frag": "9eb8a7030c1073cc04ae1667e267e9e2",
 "canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
 "canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
 "canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
@@ -51,9 +52,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "2cab9e724e5a80fa5cb2ae5e943305f4",
-"/": "2cab9e724e5a80fa5cb2ae5e943305f4",
-"main.dart.js": "a26cd763ae88b4fe234afe317bc729c6",
+"index.html": "298f4d9bfd93d0db2895daa9745c7905",
+"/": "298f4d9bfd93d0db2895daa9745c7905",
+"main.dart.js": "9688e5b02771caff25d882a9b2c5edef",
 "manifest.json": "86d1b0846067918db9f8093fd20b4a1a",
 "version.json": "555f401091b404cdad1bd05fa1bdf257"
 };
