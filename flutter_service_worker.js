@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "78ef613faee35f2209ccb38fad922053",
+  "assets/AssetManifest.json": "d004b02c1f163521025c51bd92663a0a",
 "assets/assets/demo_product/amoxillin.jpg": "9ed748ce1165b02aa6ebd0beb8bc0694",
 "assets/assets/demo_product/azithromyi.jpg": "0996e46bc55e0d8f498ec070fbde28a8",
 "assets/assets/demo_product/bag.jpg": "17167f249e4071ba7ec9e71436d75c39",
@@ -60,6 +60,7 @@ const RESOURCES = {
 "assets/assets/icons/youtube.png": "de3cc3a83a7c94323e7499237d451ba6",
 "assets/assets/icons_svg/cash_on_delivery.svg": "f1f04369ad29c0eb38f14ecfff400c86",
 "assets/assets/icons_svg/pay_amount.svg": "b86601956e67174acfdf4bafee68f7e5",
+"assets/assets/placeholders/20945385.jpg": "f7c41b8084d3601a5ea8bd4204ced351",
 "assets/assets/placeholders/App-Builder-Banner.jpg": "332d73ea51b0da34c857d257a88118f3",
 "assets/assets/placeholders/bee.png": "eaadd5d1d2d1941904e0c6447ff8ba72",
 "assets/assets/placeholders/bee_with_playstore.png": "8714610f1d195364d09d5a7cc43d54bd",
@@ -100,9 +101,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "e089383b1d554b52cd9166dd4bb70cc9",
-"/": "e089383b1d554b52cd9166dd4bb70cc9",
-"main.dart.js": "ad1152a4ee558080089dc406930c3154",
+"index.html": "eefc5d4d0f9dd53d2144bf81d350ab64",
+"/": "eefc5d4d0f9dd53d2144bf81d350ab64",
+"main.dart.js": "df436326746ddcf1842b1f6415fad68c",
 "manifest.json": "86d1b0846067918db9f8093fd20b4a1a",
 "version.json": "555f401091b404cdad1bd05fa1bdf257"
 };
