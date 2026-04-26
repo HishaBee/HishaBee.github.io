@@ -120,8 +120,9 @@ const Landing = () => {
 
             <h1 className="animate-fade-in-up text-balance text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">
               {t("landing.hero.title1")}{" "}
-              <span className="text-gradient">{t("landing.hero.title2")}</span>{" "}
-              {t("landing.hero.title3")}
+              <span className="text-gradient">
+                {t("landing.hero.title2")}
+              </span>{" "}
             </h1>
 
             <p
