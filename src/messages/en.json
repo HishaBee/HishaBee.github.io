@@ -80,6 +80,9 @@
         }
       }
     },
+    "bottomCta": {
+      "title": "Build your app now"
+    },
     "footer": {
       "copyright": "© {{year}} Hishabee. Build apps in seconds.",
       "privacy": "Privacy",

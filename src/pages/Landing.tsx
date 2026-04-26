@@ -245,6 +245,24 @@ const Landing = () => {
         </div>
       </section>
 
+      {/* BOTTOM CTA */}
+      <section className="relative overflow-hidden py-24">
+        <div className="absolute inset-0 bg-primary/5" />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-[100px]" />
+        
+        <div className="container relative z-10 flex flex-col items-center justify-center text-center">
+          <h2 className="mb-8 text-balance text-4xl font-extrabold tracking-tight sm:text-5xl">
+            {t("landing.bottomCta.title")}
+          </h2>
+          <Button asChild variant="hero" size="xl" className="animate-fade-in-up" style={{ animationDelay: "150ms" }}>
+            <Link to={paramShopId ? "/builder" : user ? "/shop" : "/login"}>
+              {t("landing.hero.cta")}{" "}
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-2 transition-all duration-300" />
+            </Link>
+          </Button>
+        </div>
+      </section>
+
       <footer className="border-t border-border/60 py-10">
         <div className="container flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground sm:flex-row">
           <p>
