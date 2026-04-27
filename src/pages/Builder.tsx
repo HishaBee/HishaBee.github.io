@@ -11,7 +11,8 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { uploadSingleImage } from "@/lib/uploadSingleImage";
+import { uploadImageToCloudinary } from "@/lib/uploadToCloudinaryImg";
+
 import { cn } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
@@ -145,7 +146,10 @@ const Builder = () => {
     try {
       let splashUrl: string | null = null;
       if (iconFile) {
-        splashUrl = await uploadSingleImage(iconFile);
+        const data = await uploadImageToCloudinary(iconFile);
+
+        splashUrl = data.secure_url;
+
         if (!splashUrl) {
           toast.error(t("builder.errors.iconUploadFailed"));
           setBuilding(false);
@@ -153,9 +157,17 @@ const Builder = () => {
         }
       }
 
-      const appNameSafe = values.appName.replace(/[^a-zA-Z0-9 ]/g, "").trim();
+      // Keep Unicode letters (e.g. Bengali) and normalize spaces.
+      const appNameSafe = values.appName.trim().replace(/\s+/g, " ");
+      if (!appNameSafe) {
+        form.setError("appName", {
+          type: "manual",
+          message: "builder.form.appNameRequired",
+        });
+        setBuilding(false);
+        return;
+      }
       const primaryColor = hslToHex(color);
-
       const response = await fetch(
         `https://app.hishabee.business/white-label/dispatch`,
         {
