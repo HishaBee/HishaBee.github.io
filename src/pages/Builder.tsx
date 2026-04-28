@@ -11,6 +11,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { uploadSingleImage } from "@/lib/uploadSingleImage";
 import { uploadImageToCloudinary } from "@/lib/uploadToCloudinaryImg";
 
 import { cn } from "@/lib/utils";
@@ -146,9 +147,8 @@ const Builder = () => {
     try {
       let splashUrl: string | null = null;
       if (iconFile) {
-        const data = await uploadImageToCloudinary(iconFile);
-
-        splashUrl = data.secure_url;
+        const data = await uploadSingleImage(iconFile);
+        splashUrl = data;
 
         if (!splashUrl) {
           toast.error(t("builder.errors.iconUploadFailed"));
